@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Binary.dot</title> 
+  <link rel="stylesheet" href="../static/stylelogin.css"> 
+  <style>
+#signup-link {
+    display: none;
+}
+
+#signin-button {
+    display: block;
+}
+
+@media (max-width: 480px) {
+    #signup-link {
+        display: block;
+    }
+
+    #signin-button {
+        display: none;
+    }
+}
+</style> 
+ </head> 
+ <body>
+  <section> 
+   <div class="signin"> 
+    <div class="content"> 
+     <h2>Welcome</h2> 
+     <div class="form"> 
+      <div class="inputBox"> 
+       <input type="text" required> <i>Username</i> 
+      </div> 
+      <div class="inputBox"> 
+       <input type="password" required> <i>Password</i> 
+      </div> 
+      <div class="links">
+        <div class="links">
+            <a href="{{ url_for('signup') }}">Sign Up</a>
+            <a href="#"></a>
+        </div>
+      </div> 
+      <div class="inputBox"> 
+        <a href="{{ url_for('homepage') }}">
+            <input type="submit" value="Login" id="signin-button"> 
+        </a>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> <!-- partial --> 
+ </body>
+</html>

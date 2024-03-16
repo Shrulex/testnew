@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Host Event</title>
+</head>
+<body>
+    <h1>Host Event</h1>
+    <form action="{{ url_for('home') }}" method="post" enctype="multipart/form-data">
+        <label for="event_name">Event Name:</label>
+        <input type="text" name="event_name" id="event_name" required><br><br>
+
+        <label for="event_description">Event Description:</label><br>
+        <textarea name="event_description" id="event_description" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="image">Image:</label><br>
+        <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg" required><br><br>
+
+        <button type="submit">Create Event</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/magic.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/png" href="../static/images/Binarydot.png">
+    <title>Binary.dot</title>
+</head>
+<body style="background-color: black;">
+    <div class="center">
+        <img id="logo" src="../static/images/Binarydot.png" height="300">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <h1 align="center" style="color: white;">Elevate Your Crypto Experience:</h1>
+    <h1 align="center" style="color: white;">Binary.dot, Where Rewards and Security Converge!</h1>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    {{ form.csrf_token }}
+                    {{ form.email.label(style="color: white;") }}<br>
+                    {{ form.email }}<br><br>
+                    {{ form.username.label(style="color: white;") }}<br>
+                    {{ form.username }}<br><br>
+                    {{ form.password.label(style="color: white;")}}<br>
+                    {{ form.password }}<br><br>
+                    {{ form.confirm_password.label(style="color: white;") }}<br>
+                    {{ form.confirm_password }}<br><br>
+                    {{ form.submit() }}
+                </form>
+            </div>
+        </div>
+    </div>
+    <section> </section>
+</body>
+</html>

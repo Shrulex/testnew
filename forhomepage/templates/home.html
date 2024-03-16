@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Event Details</h1>
+    {% if event_name %}
+        <p><strong>Event Name:</strong> {{ event_name }}</p>
+    {% endif %}
+
+{% if event_description %}
+        <p><strong>Event Description:</strong> {{ event_description }}</p>
+    {% endif %}
+
+    {% if image %}
+        <p><strong>Image:</strong></p>
+        <img src="{{ url_for('uploaded_file', filename=image) }}" alt="Event Image" width="300" height="200"></p>
+    {% endif %}
+
+    <a href="{{ url_for('host') }}">Host another event</a>
+</body>
+</html>
