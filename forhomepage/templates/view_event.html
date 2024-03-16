@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event</title>
+</head>
+<body>
+    <h1>{{ event.name }}</h1>
+    <p>{{ event.description }}</p>
+    <img src="{{ url_for('upload_file', filename=event.image_filename) }}" alt="{{ event.name }}">
+</body>
+</html>

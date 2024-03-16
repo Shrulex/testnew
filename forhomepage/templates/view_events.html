@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <ul>
+        {% for event in events %}
+            <li><a href="{{ url_for('view_event', filename=event.image_filename) }}">{{ event.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
